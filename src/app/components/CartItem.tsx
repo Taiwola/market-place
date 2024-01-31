@@ -14,10 +14,10 @@ const CartItem = ({ product, productId }: { product: Products, productId: number
   const products = product.filter((item) => item.id === productId).map((item) => {
     const image = item.images.image1[0]
     return (
-      <div className='space-y-3 py-2'>
+      <div key={item.id} className='space-y-3 py-2'>
       <div className='flex items-start justify-between gap-4'>
         <div className='flex items-center space-x-4'>
-          <div className='relative aspect-square h-16 w-16 min-w-fit overflow-hidden rounded'>
+          <div key={item.id} className='relative aspect-square h-16 w-16 min-w-fit overflow-hidden rounded'>
             {typeof image !== 'string' && image ? (
               <Image
                 src={image}

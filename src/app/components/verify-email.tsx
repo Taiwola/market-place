@@ -56,7 +56,7 @@ const VerifyEmail = ({token}: PropsToken) => {
                 <Loader2 className="animate-spin h-8 w-8 text-red-600" />
                 <h3>Verifying...</h3>
                 <p className="text-muted-foreground">
-                  this won't take long
+                  this won&apos;t take long
                 </p>
             </div>
         )
